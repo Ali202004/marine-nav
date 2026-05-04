@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "Marine Navigator",
+    "slug": "marine-nav",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "marinenavigator",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1E35"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.marine.navigator",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "يحتاج التطبيق إلى موقعك لتتبع المسار وعرضه على الخريطة",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "يحتاج التطبيق إلى موقعك لتتبع المسار في الخلفية",
+        "NSLocationAlwaysUsageDescription": "يحتاج التطبيق إلى موقعك لتتبع المسار في الخلفية"
+      }
+    },
+    "android": {
+      "package": "com.marine.navigator",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0B1E35"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "VIBRATE",
+        "WAKE_LOCK",
+        "RECEIVE_BOOT_COMPLETED",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "MANAGE_EXTERNAL_STORAGE"
+      ],
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "يحتاج التطبيق إلى موقعك لتتبع المسار وعرضه على الخريطة",
+          "locationAlwaysPermission": "يحتاج التطبيق إلى موقعك لتسجيل المسار في الخلفية",
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      "expo-sqlite",
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

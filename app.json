@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "267ccd2e-ff83-4dc4-8b6e-7693822e4e8f"
+      }
+    },
+    "android": {
+      "package": "com.marine.navigator"
+    }
+  }
+}

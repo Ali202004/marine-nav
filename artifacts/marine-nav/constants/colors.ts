@@ -1,0 +1,30 @@
+const colors = {
+  light: {
+    text: "#FFFFFF",
+    tint: "#4DA6FF",
+    background: "#0B1E35",
+    foreground: "#FFFFFF",
+    card: "#132A47",
+    cardForeground: "#FFFFFF",
+    primary: "#4DA6FF",
+    primaryForeground: "#FFFFFF",
+    secondary: "#1A3554",
+    secondaryForeground: "#FFFFFF",
+    muted: "#1E3D60",
+    mutedForeground: "#7A9BBE",
+    accent: "#FF9800",
+    accentForeground: "#FFFFFF",
+    destructive: "#EF5350",
+    destructiveForeground: "#FFFFFF",
+    border: "#1E3D60",
+    input: "#1E3D60",
+    success: "#4CAF50",
+    gold: "#C8A84B",
+    gpsGreen: "#00E676",
+    trackRed: "#FF3D00",
+    trackBlue: "#1565C0",
+  },
+  radius: 10,
+};
+
+export default colors;
